@@ -1,53 +1,590 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEE'S FOOD WEBSITE</title>
-
-    <!--font awesome cdn link-->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!--css file link-->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Dee's Cafee</title>
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/m.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style1.css">
+    <!--font awesome js-->
+    <script src="js/all.js"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+    <!--magnifix popup-->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 
 </head>
+
 <body>
-    <!--header section-->
-    <header>
-        <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
-        <nav class="navbar">
-            <a href="active">Home</a>
-            <a href="#login">Sign in</a>
-            <a href="#dishes">Dishes</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#order">Order</a>
-            <a href="#home">Home</a>
-        </nav>
-        </nav>
+<!--social icons-->
+    <div class="container-fluid info p-3" id="top-icons">
+        <div class="row">
+            <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+                <div class="info-icons p-2">
 
-        <div class="icons">
-            <i class="fas fa-bars" id="bars"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
-
+                    <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color"><i class="fab fa-yelp fa-2x"></i></a>
+                </div>
+                <h2 class="primary-color p-2 text-capitalize">Meat you Here!</h2>
+            </div>
         </div>
+    </div>
+    <!--end of social icons-->
+    <!--header section-->
+    <header id="header">
+        <div class="containers">
+            <div class="row height-98 align-items-center justify-content-center">
+                <div class="col">
+                    <div class="banner text-center">
+                        <h1 class="display-1 text-capitalize w-50 mx-auto">
+                            <small>Dee's</small><strong class="primary-color">Cafe</strong>
+                        </h1>
+
+
+                         <!--Add-->
+
+
+                        <a href="order.html" class="btn main-btn sushi-btn my-4 text-capitalize">order online</a>
+                        <a href="#book-table" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="open-popup">book tables</a>
+
+
+                        <a href="#exampleModal" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="modal">Sign In</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#special-items" class="btn header-link primary-color"><i class="fas fa-arrow-down"></i></a>
     </header>
-    <section id="home"></section>
-    <section id="dishes">Dishes</section>
-    <section id="about">About</section>
-    <section id="menu">Menu</section>
-    <section id="reviews">Reviews</section>
-    <section id="order">Order</section>
+    <!--end of header section-->
+    <!---->
+    <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand text-uppercase primary-color">Dee's Cafe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+            <div class="toggler-btn">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
 
-    <!--Script Section for Vanilla Js and jQuery-->
+        </button>navbar
+        <!--links-->
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="#special-items" class="nav-link text-capitalize">special items</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link text-capitalize">menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link text-capitalize">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link text-capitalize">reviews</a>
+                </li>
 
-    <script src="js/index.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+
+
+            </ul>
+            <!--Add-->
+            <form class="form-inline d-none d-lg-block mr-5">
+                <!--<button class="btn nav-btn text-capitalize" type="button">order online</button>-->
+                <button><a href="#book-table" data-toggle="open-popup">book tables</a></button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sign up/Log In</button>
+
+            </form>
+        </div>
+    </nav>
+    <!--end of navbar-->
+    <!--menuitems-->
+    <section class="py-5" id="special-items">
+        <div class="containers my-5">
+            <div class="row parent-container">
+                <!--menu items-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="img/dessert.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+
+                            <h1 class="text-uppercase text-center item-link px-3" onclick="window.location.href = 'order1.html' ">menu item</h1>
+
+                    </div>
+                </div>
+                <!--menu items-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                        <div class="item-container">
+                            <img src="img/fries.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+
+                                <h1 class="text-uppercase text-center item-link px-3 "onclick="window.location.href = 'order1.html'">menu item</h1>
+                            </a>
+                        </div>
+                    </div>
+                <!--menu items-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                        <div class="item-container">
+                            <img src="img/lobster.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                            </a>
+                        </div>
+                    </div>
+                 <!--menu items-->
+                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                        <div class="item-container">
+                            <img src="img/pasta.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                            </a>
+                        </div>
+                    </div>
+                 <!--menu items-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                        <div class="item-container">
+                            <img src="img/pizza.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                            </a>
+                        </div>
+                    </div>
+                 <!--menu items-->
+                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                        <div class="item-container">
+                            <img src="img/sp.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--end of menuitems-->
+
+
+
+
+    <!--about-->
+    <section id="about" class="py-5">
+        <div class="containers">
+            <div class="row">
+                <div class="col-md-6 my-4">
+                    <h1 class="text-uppercase display-3">about us</h1>
+                    <h2 class="text-muted">yummy in your tummy. because no food no life.</h2>
+                    <a href="" class="btn main-btn my-4 text-capitalize">learn more</a>
+                </div>
+                <div class="col-md-6 about-pictures my-4 d-none d-lg-block">
+                    <img src="img/chicken biryani.jpg" alt="menu" class="img-1 img-thumbnail about-image">
+                    <img src="img/burger.jpg" alt="menu" class="img-3 img-thumbnail about-image">
+                    <img src="img/side.jpg" alt="menu" class="img-2 img-thumbnail about-image">
+                    <img src="img/lamb.jpg" alt="menu" class="img-4 img-thumbnail about-image">
+                    <img src="img/starter.jpg" alt="menu" class="img-5 img-thumbnail about-image">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--end of about-->
+
+    <!--reviews-->
+    <section id="reviews" class="py-5">
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!--carousel item-->
+                <div class="carousel-item active">
+                    <div class="containers">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                                <!--image-->
+                                <div class="align-self-center ml-3">
+                                    <img src="img/yoda.jpg" alt="" class="rounded-circle review-img">
+                                </div>
+                                <!--text-->
+                                <div class="review-text px-5">
+                                    <h2 class="text-capitalize mb-3 primary-color">Sulwe</h2>
+                                    <p class="lead text-muted">Amazing service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of carousel item-->
+                <!--carousel item-->
+                <div class="carousel-item ">
+                        <div class="containers">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                                    <!--image-->
+                                    <div class="align-self-center ml-3">
+                                        <img src="img/chef.jpg" alt="" class="rounded-circle review-img">
+                                    </div>
+                                    <!--text-->
+                                    <div class="review-text px-5">
+                                        <h2 class="text-capitalize mb-3 primary-color">Kobi</h2>
+                                        <p class="lead text-muted">Great ambience for the dine-in experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of carousel item-->
+                    <!--carousel item-->
+                <div class="carousel-item ">
+                        <div class="containers">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                                    <!--image-->
+                                    <div class="align-self-center ml-3">
+                                        <img src="img/delivery.jpg" alt="" class="rounded-circle review-img">
+                                    </div>
+                                    <!--text-->
+                                    <div class="review-text px-5">
+                                        <h2 class="text-capitalize mb-3 primary-color">Muema</h2>
+                                        <p class="lead text-muted">Tastiest of meals</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of carousel item-->
+
+
+            </div>
+            <!--carousel controls-->
+            <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+        </div>
+
+    </section>
+
+
+
+
+    <!--end of reviews-->
+<!-- Button trigger modal  (Sign up/sign in)
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Sign Up
+  </button>-->
+
+
+ <!--Add-->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="container" id="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo"/>
+            </div>
+            <div>
+                    <div class="form-container sign-up-container">
+                            <form action="#">
+                                <input type="email" placeholder="Email" id="email" />
+                                <span id="error-email"></span>
+                                <input type="password" placeholder="Password" id="password"/>
+                                <span id="error-password"></span>
+                                <button id="register">Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form action="#">
+
+                                <input type="email" placeholder="Email" id="login-email" />
+                                <span id="login-error-email"></span>
+                                <input type="password" placeholder="Password" id="login-password"/>
+                                <span id="login-error-password"></span>
+                                <button id="sign-in">Sign in</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <h1>Welcome Back!</h1>
+                                    <p>To keep connected with us please login with your personal info</p>
+                                    <button class="ghost" id="signIn">Sign In</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <h1>Hello, Foodies!</h1>
+                                    <p>Start your food journey with us</p>
+                                    <button class="ghost" id="signUp">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!--Add-->
+
+      <div class="page">
+        <!--<div class="page__container">
+          <a href="#book-table" class="open-popup">open popup</a>
+        </div>-->
+      </div>
+      <div id="book-table" class="popup">
+        <div class="popup__container">
+
+          <div class="popup__content">
+
+            <form method="post" action="//submit.form" onSubmit="return validateForm();">
+                <div style="max-width: 400px;">
+                </div>
+
+                <div style="padding-bottom: 18px;font-size : 24px;">Table Reservation</div>
+                <a href="#" class="popup__close">
+            <span class="screen-reader">close</span>
+          </a>
+          <div style="padding-bottom: 18px;font-size : 18px;">We would be glad to reserve a table for you at our restaurant!</div>
+                <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
+                <input type="text" id="data_3" name="data_3" style="max-width : 400px;" class="form-control"/>
+                </div>
+                <div style="padding-bottom: 18px;">Phone<br/>
+                <input type="text" id="data_4" name="data_4" style="max-width : 400px;" class="form-control"/>
+                </div>
+                <div style="padding-bottom: 18px;">Email<br/>
+                <input type="text" id="data_5" name="data_5" style="max-width : 400px;" class="form-control"/>
+                </div>
+                <div style="padding-bottom: 18px;">Date<span style="color: red;"> *</span><br/>
+                <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+                <div style="padding-bottom: 18px;">Time<span style="color: red;"> *</span><br/>
+                <input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control"/>
+                </div>
+                <div style="padding-bottom: 18px;">Number of Attendees<span style="color: red;"> *</span><br/>
+                <select id="data_8" name="data_8" style="max-width : 250px;" class="form-control"><option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>10+ (Specify in Comments)</option>
+                </select>
+                </div>
+                <div style="padding-bottom: 18px;">Comments / Additional Requests<br/>
+                <textarea id="data_9" false name="data_9" style="max-width : 400px;" rows="6" class="form-control"></textarea>
+                </div>
+                <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+                <div>
+                <script src="https://www.100forms.com/js/FORMKEY:UR9C5989DMGL/SEND:king001gasine@gmail.com" type="text/javascript"></script>
+                </div>
+                </form>
+
+                <script type="text/javascript">
+                function validateForm() {
+                if (isEmpty(document.getElementById('data_3').value.trim())) {
+                alert('Name is required!');
+                return false;
+                }
+                if (!validateEmail(document.getElementById('data_5').value.trim())) {
+                alert('Email must be a valid email address!');
+                return false;
+                }
+                if (isEmpty(document.getElementById('data_6').value.trim())) {
+                alert('Date is required!');
+                return false;
+                }
+                if (isEmpty(document.getElementById('data_7').value.trim())) {
+                alert('Time is required!');
+                return false;
+                }
+                return true;
+                }
+                function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+                function validateEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                return isEmpty(email) || re.test(email);
+                }
+                </script>
+                </div>
+        </div>
+      </div>
+
+    <!--social icons-->
+    <div class="container-fluid info p-3">
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+                    <div class="info-icons p-2">
+
+                        <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="mr-2 primary-color"><i class="fab fa-yelp fa-2x"></i></a>
+                    </div>
+                    <h2 class="primary-color p-2 uppercase">DEE'S CAFE</h2>
+                </div>
+            </div>
+        </div>
+        <!--end of social icons
+        <a href="#top-icons" id="back-to-top" class="p-1"><i class="fas fa-arrow-up primary-color fa-3x"></i></a>
+    -->
+
+
+
+
+    <!--Add Izi zingine zotee-->
+
+
+    <!--jquery-->
+    <script src="Js/jquery-3.4.1.min.js"></script>
+    <!--bootstrap-->
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <!--ripple-->
+    <script src="js/jquery.ripples-min.js"></script>
+    <!--magnific popup-->
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <!--js-->
+    <!--Add-->
+     <script src="js/login.js"></script>
+     <script src="js/script.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-database.js"></script>
+    <!--Add-->
+    <!--Handle page events-->
+    <script>
+        // register
+        document
+          .querySelector("#register")
+          .addEventListener("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            let email = document.querySelector("#email").value;
+            let password = document.querySelector("#password").value;
+            if (email.length<1) {
+          document.getElementById('error-email').innerHTML = " Please Enter Your Email *";
+      }
+      if (password.length<1) {
+          document.getElementById('error-password').innerHTML = " Please Enter Your password *";
+      }
+            firebase
+              .auth()
+              .createUserWithEmailAndPassword(email, password)
+              .then(data =>{
+                  console.log("hello success",data.user)
+                  if(data.user){
+                      window.location.href="index.html"
+                  }
+              })
+              .catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                document.getElementById('error-password').innerHTML = errorMessage;
+              });
+          });
+        //sign in
+        document.querySelector("#sign-in")
+        .addEventListener("click", function(e)
+         {
+          e.preventDefault();
+          e.stopPropagation();
+          let email = document.querySelector("#login-email").value;
+          let password = document.querySelector("#login-password").value;
+          if (email.length<1) {
+          document.getElementById('login-error-email').innerHTML = " Please Enter Your Email *";
+           }
+          if (password.length<1) {
+              document.getElementById('login-error-password').innerHTML = " Please Enter Your password *";
+          }
+          firebase.auth().signInWithEmailAndPassword(email, password)
+          .then(data =>{
+                  console.log("hello success",data.user.uid)
+                  var uid = data.user.uid;
+                  // alert(uid);
+                  if(data.user){
+                      console.log("save into firebase" , uid);
+
+                      db.collection("users")
+                          .add({
+                          email: data.user.email,
+                          uid: data.user.uid
+
+
+                          })
+                          .then(function(docRef) {
+                              console.log(docRef);
+                              window.location.href="index.html"
+                          })
+                          .catch(function(error) {
+                              //alert(error);
+                          console.error("Error adding document: ", error);
+                          });
+
+
+
+                  }
+          })
+          .catch(function(error) {
+          // Handle Errors here.
+          let errorCode = error.code;
+          let errorMessage = error.message;
+          });
+        });
+
+  //log out
+        document
+          .querySelector("#sign-out")
+          .addEventListener("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            alert("logout");
+          });
+      </script>
+
+    <script>
+
+     //console.log("helllo");
+
+           // Your web app's Firebase configuration
+           var firebaseConfig = {
+        apiKey: "AIzaSyA31DCogiFh5-6nqka-onPDqXEXefkUD20",
+        authDomain: "uggghh-eaecd.firebaseapp.com",
+        databaseURL: "https://uggghh-eaecd.firebaseio.com",
+        projectId: "uggghh-eaecd",
+        storageBucket: "uggghh-eaecd.appspot.com",
+        messagingSenderId: "1065017607625",
+        appId: "1:1065017607625:web:2831a3b55ee3bd4e"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+
+        var database = firebase.database().ref();
+        console.log("database " + database );
+
+       // var userId = firebase.auth().currentUser.uid;
+        database.once('value').then(function(snapshot) {
+        //var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+
+     console.log("The given item is ->  " + snapshot.val().order[2].item);
+});
+</script>
 </body>
 </html>
