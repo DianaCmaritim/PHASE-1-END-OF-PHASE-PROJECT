@@ -5,7 +5,7 @@ This application fetched data from a local server running JSON DB server[http://
 
 ## Description
 ### Problem Statement<br>
-Busy schedules that people have at work places or at their homes have made taking time to prepare a meal or going to a restaurant almost impossible.To fill thisgap,the app that will address these needs and have clients order food from a wide selection offered from the comfort of their locations.
+Busy schedules that people have at work places or at their homes have made taking time to prepare a meal or going to a restaurant almost impossible.To fill this gap,the app that will address these needs and have clients order food from a wide selection offered from the comfort of their locations.
 
 ### Solution
 The application will allow users to order food from anywhere and make reservations in the event they would like a dine in experience.
