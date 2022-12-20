@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,12 @@
     <link rel="stylesheet" href="css/m.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/style1.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/styled.css">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<link rel="stylesheet" href="css/demo.css">
+
+
     <!--font awesome js-->
     <script src="js/all.js"></script>
     <!--google fonts-->
@@ -28,12 +33,12 @@
             <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
                 <div class="info-icons p-2">
 
-                    <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#" class="mr-2 primary-color"><i class="fab fa-yelp fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-yelp fa-2x"></i></a>
                 </div>
-                <h2 class="primary-color p-2 text-capitalize">Meat you Here!</h2>
+                <h2 class="primary-color p-2 text-capitalize text-primary">MEAT YOU HERE!</h2>
             </div>
         </div>
     </div>
@@ -45,18 +50,16 @@
                 <div class="col">
                     <div class="banner text-center">
                         <h1 class="display-1 text-capitalize w-50 mx-auto">
-                            <small>Dee's</small><strong class="primary-color">Cafe</strong>
+                            <small>Dee's</small><strong class="primary-color text-warning">Cafe</strong>
                         </h1>
 
 
                          <!--Add-->
+                        <a href="order.html" class="btn main-btn sushi-btn my-4 text-capitalize text-primary">Order online</a>
+                        <a href="#book-table" class="btn main-btn sushi-btn my-4 text-capitalize text-primary" data-toggle="open-popup">Book Tables</a>
 
 
-                        <a href="order.html" class="btn main-btn sushi-btn my-4 text-capitalize">order online</a>
-                        <a href="#book-table" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="open-popup">book tables</a>
-
-
-                        <a href="#exampleModal" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="modal">Sign In</a>
+                        <a href="#exampleModal" class="btn main-btn sushi-btn my-4 text-capitalize text-primary" data-toggle="modal">Sign In</a>
 
                     </div>
                 </div>
@@ -67,7 +70,7 @@
     <!--end of header section-->
     <!---->
     <nav class="navbar navbar-expand-lg">
-        <a href="#" class="navbar-brand text-uppercase primary-color">Dee's Cafe</a>
+        <a href="#" class="navbar-brand text-uppercase primary-color text-primary">Dee's Treats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
             <div class="toggler-btn">
                 <div class="bar bar1"></div>
@@ -80,16 +83,16 @@
         <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a href="#special-items" class="nav-link text-capitalize">special items</a>
+                    <a href="#special-items" class="nav-link text-capitalize">Special items</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#menu" class="nav-link text-capitalize">menu</a>
+                    <a href="#menu" class="nav-link text-capitalize">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link text-capitalize">about</a>
+                    <a href="#about" class="nav-link text-capitalize">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#reviews" class="nav-link text-capitalize">reviews</a>
+                    <a href="#reviews" class="nav-link text-capitalize">Reviews</a>
                 </li>
 
 
@@ -100,7 +103,7 @@
             <!--Add-->
             <form class="form-inline d-none d-lg-block mr-5">
                 <!--<button class="btn nav-btn text-capitalize" type="button">order online</button>-->
-                <button><a href="#book-table" data-toggle="open-popup">book tables</a></button>
+                <button class="btn btn-primary"><a href="#book-table" data-toggle="open-popup">book tables</a></button>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sign up/Log In</button>
 
             </form>
@@ -114,7 +117,7 @@
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                     <div class="item-container">
-                        <img src="img/dessert.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                        <img src="img/kfc.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                             <h1 class="text-uppercase text-center item-link px-3" onclick="window.location.href = 'order1.html' ">menu item</h1>
 
@@ -123,7 +126,7 @@
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/fries.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/sp.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3 "onclick="window.location.href = 'order1.html'">menu item</h1>
                             </a>
@@ -132,7 +135,7 @@
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/lobster.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/pasta.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
                             </a>
@@ -141,7 +144,7 @@
                  <!--menu items-->
                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/pasta.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/lamb.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
                             </a>
@@ -150,7 +153,7 @@
                  <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/pizza.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/fries.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
                             </a>
@@ -159,7 +162,7 @@
                  <!--menu items-->
                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/sp.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/dessert.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
                             </a>
@@ -178,22 +181,74 @@
         <div class="containers">
             <div class="row">
                 <div class="col-md-6 my-4">
-                    <h1 class="text-uppercase display-3">about us</h1>
-                    <h2 class="text-muted">yummy in your tummy. because no food no life.</h2>
-                    <a href="" class="btn main-btn my-4 text-capitalize">learn more</a>
+                    <h1 class="text-uppercase display-3">About us</h1>
+                    <h2 class="text-muted">Yum yum</h2>
+                    <a href="" class="btn main-btn my-4 text-capitalize">Learn More</a>
                 </div>
                 <div class="col-md-6 about-pictures my-4 d-none d-lg-block">
-                    <img src="img/chicken biryani.jpg" alt="menu" class="img-1 img-thumbnail about-image">
-                    <img src="img/burger.jpg" alt="menu" class="img-3 img-thumbnail about-image">
-                    <img src="img/side.jpg" alt="menu" class="img-2 img-thumbnail about-image">
-                    <img src="img/lamb.jpg" alt="menu" class="img-4 img-thumbnail about-image">
-                    <img src="img/starter.jpg" alt="menu" class="img-5 img-thumbnail about-image">
+                    <img src="img/pizza.jpg" alt="menu" class="img-1 img-thumbnail about-image btn-primary">
+                    <img src="img/beef.jpg" alt="menu" class="img-3 img-thumbnail about-image btn-primary">
+                    <img src="img/pork.jpg" alt="menu" class="img-2 img-thumbnail about-image btn-primary">
+                    <img src="img/starter.jpg" alt="menu" class="img-4 img-thumbnail about-image btn-primary">
+                    <img src="img/burger.jpg" alt="menu" class="img-5 img-thumbnail about-image btn-primary">
                 </div>
             </div>
         </div>
 
     </section>
     <!--end of about-->
+    <main>
+        <!-- Start DEMO HTML-->
+   <div class="cart-modal-overlay">
+       <div class="cart-modal">
+         <i id="close-btn text-primary" class="fas fa-times"></i>
+           <h1 class="cart-is-empty">Cart is empty</h1>
+
+           <div class="product-rows">
+           </div>
+           <div class="total">
+             <h1 class="cart-total">TOTAL</h1>
+               <span class="total-price">Ksh0</span>
+                 <button class="purchase-btn text-primary">PURCHASE</button>
+           </div>
+         </div>
+   </div>
+
+   <!--   end of cart modal -->
+     <div class="cart-btn">
+       <i id="cart" class="fas fa-shopping-cart"></i>
+         <span class ="cart-quantity">0</span>
+     </div>
+   <!--  products  -->
+     <div class="items-container">
+       <div class="card-1 card">
+         <img class="product-image" src="" alt="">
+           <button class="add-to-cart">Add to cart</button>
+             <span class="product-price">Ksh1395</span>
+       </div>
+       <div class="card-2 card">
+         <img class="product-image" src="" alt="">
+         <button class="add-to-cart">Add to cart</button>
+           <span class="product-price">Ksh1175</span>
+       </div>
+       <div class="card-3 card">
+         <img class="product-image" src="" alt="">
+           <button class="add-to-cart">Add to cart</button>
+             <span class="product-price">Ksh1150</span>
+       </div>
+       <div class="card-4 card">
+         <img class="product-image" src="" alt="">
+            <button class="add-to-cart">Add to cart</button>
+           <span class="product-price">Ksh1575</span>
+       </div>
+       <div class="card-5 card">
+         <img class="product-image" src="" alt="">
+         <button class="add-to-cart">Add to cart</button>
+         <span class="product-price">Ksh230</span>
+       </div>
+     </div>
+        <!-- END DEMO HTML-->
+    </main>
 
     <!--reviews-->
     <section id="reviews" class="py-5">
@@ -210,8 +265,8 @@
                                 </div>
                                 <!--text-->
                                 <div class="review-text px-5">
-                                    <h2 class="text-capitalize mb-3 primary-color">Sulwe</h2>
-                                    <p class="lead text-muted">Amazing service</p>
+                                    <h2 class="text-capitalize mb-3 primary-color text-primary">customer name</h2>
+                                    <p class="lead text-muted">Great food</p>
                                 </div>
                             </div>
                         </div>
@@ -229,8 +284,8 @@
                                     </div>
                                     <!--text-->
                                     <div class="review-text px-5">
-                                        <h2 class="text-capitalize mb-3 primary-color">Kobi</h2>
-                                        <p class="lead text-muted">Great ambience for the dine-in experience</p>
+                                        <h2 class="text-capitalize mb-3 primary-color text-primary">Muema</h2>
+                                        <p class="lead text-muted">Yummy meals ,thank you Dee's</p>
                                     </div>
                                 </div>
                             </div>
@@ -248,8 +303,8 @@
                                     </div>
                                     <!--text-->
                                     <div class="review-text px-5">
-                                        <h2 class="text-capitalize mb-3 primary-color">Muema</h2>
-                                        <p class="lead text-muted">Tastiest of meals</p>
+                                        <h2 class="text-capitalize mb-3 primary-color text-primary">customer name</h2>
+                                        <p class="lead text-muted">Will definitely be back!</p>
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +343,7 @@
       <div class="modal-content">
         <div class="container" id="container">
             <div class="logo">
-                <img src="logo.jpg" alt="logo"/>
+                <img src="/img/bckg.jpg" alt="logo"/>
             </div>
             <div>
                     <div class="form-container sign-up-container">
@@ -314,12 +369,12 @@
                             <div class="overlay">
                                 <div class="overlay-panel overlay-left">
                                     <h1>Welcome Back!</h1>
-                                    <p>To keep connected with us please login with your personal info</p>
+                                    <p>Stay connected with us please login with your personal info</p>
                                     <button class="ghost" id="signIn">Sign In</button>
                                 </div>
                                 <div class="overlay-panel overlay-right">
-                                    <h1>Hello, Foodies!</h1>
-                                    <p>Start your food journey with us</p>
+                                    <h1>Welcome to Dee's</h1>
+                                    <p>We are the best in the kitchen</p>
                                     <button class="ghost" id="signUp">Sign Up</button>
                                 </div>
                             </div>
@@ -423,29 +478,78 @@
         </div>
       </div>
 
+      <main>
+        <!-- Start DEMO HTML (Use the following code into your project)-->
+   <div class="cart-modal-overlay">
+       <div class="cart-modal">
+         <i id="close-btn" class="fas fa-times"></i>
+           <h1 class="cart-is-empty">Cart is empty</h1>
+
+           <div class="product-rows">
+           </div>
+           <div class="total">
+             <h1 class="cart-total">TOTAL</h1>
+               <span class="total-price">Ksh0</span>
+                 <button class="purchase-btn">PURCHASE</button>
+           </div>
+         </div>
+   </div>
+
+   <!--   end of cart modal -->
+     <!-- <div class="cart-btn">
+       <i id="cart" class="fas fa-shopping-cart"></i>
+         <span class ="cart-quantity">0</span>
+     </div> -->
+   <!--  products  -->
+     <!-- <div class="items-container">
+       <div class="card-1 card">
+         <img class="product-image" src="/img/" alt="">
+           <button class="add-to-cart">Add to cart</button>
+             <span class="product-price">Ksh1395</span>
+       </div>
+       <div class="card-2 card">
+         <img class="product-image" src="./img/image-2.webp" alt="">
+         <button class="add-to-cart">Add to cart</button>
+           <span class="product-price">Ksh1175</span>
+       </div>
+       <div class="card-3 card">
+         <img class="product-image" src="./img/" alt="">
+           <button class="add-to-cart">Add to cart</button>
+             <span class="product-price">Ksh1150</span>
+       </div>
+       <div class="card-4 card">
+         <img class="product-image" src="./img/image-4.webp" alt="">
+            <button class="add-to-cart">Add to cart</button>
+           <span class="product-price">Ksh1575</span>
+       </div>
+       <div class="card-5 card">
+         <img class="product-image" src="/img" alt="">
+         <button class="add-to-cart">Add to cart</button>
+         <span class="product-price">Ksh230</span>
+       </div>
+     </div> -->
+        <!-- END DEMO HTML (Happy Coding!)-->
+    <!-- </main> -->
+
+
     <!--social icons-->
     <div class="container-fluid info p-3">
             <div class="row">
                 <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
                     <div class="info-icons p-2">
 
-                        <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="#" class="mr-2 primary-color"><i class="fab fa-yelp fa-2x"></i></a>
+                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-yelp fa-2x"></i></a>
                     </div>
-                    <h2 class="primary-color p-2 uppercase">DEE'S CAFE</h2>
+                    <h2 class="primary-color p-2 uppercase text-primary">DEE'S CAFE</h2>
                 </div>
             </div>
         </div>
         <!--end of social icons
         <a href="#top-icons" id="back-to-top" class="p-1"><i class="fas fa-arrow-up primary-color fa-3x"></i></a>
     -->
-
-
-
-
-    <!--Add Izi zingine zotee-->
 
 
     <!--jquery-->
@@ -460,6 +564,7 @@
     <!--Add-->
      <script src="js/login.js"></script>
      <script src="js/script.js"></script>
+     <script  src="js/scriptd.js"></script>
 
 
     <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
