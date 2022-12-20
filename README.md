@@ -62,7 +62,7 @@ Run the command<br>
 
 Open the file in a browser of your choice
 
-This project has been deployed and it can be accessed via this link[]
+This project has been deployed and it can be accessed via this link[https://github.com/DianaCmaritim/PHASE-1-END-OF-PHASE-PROJECT]
 
 ## Author
 Diana Maritim
