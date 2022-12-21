@@ -27,7 +27,7 @@ The application will allow users to order food from anywhere and make reservatio
 
 When the user opens the app, they should be able to see;
 * Home landing page
-* Sign in(authentication page)
+* Dummy Sign in(authentication page)
 * Place food orders
 * Book or reserve a table
 * Rate their satisfaction against the services provided by leaving reviews.
@@ -62,7 +62,7 @@ Run the command<br>
 
 Open the file in a browser of your choice
 
-This project has been deployed and it can be accessed via this link[https://github.com/DianaCmaritim/PHASE-1-END-OF-PHASE-PROJECT]
+This project has been deployed and it can be accessed via this link[https://dianacmaritim.github.io/PHASE-1-END-OF-PHASE-PROJECT/]
 
 ## Author
 Diana Maritim
