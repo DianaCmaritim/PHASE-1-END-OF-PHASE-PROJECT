@@ -68,4 +68,4 @@ This project has been deployed and it can be accessed via this link[https://dian
 Diana Maritim
 
 ## License
-This project is licenced under under Apache 2.0
+This project is licenced under under ISC
