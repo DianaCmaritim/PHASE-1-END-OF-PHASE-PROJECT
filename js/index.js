@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded',()=>{
 let tbody = document.getElementById("tbody")
 
 
@@ -41,3 +41,4 @@ function td_fun({ foodThumb, food, foodPrice}){
     `;
     return td;
 }
+})
