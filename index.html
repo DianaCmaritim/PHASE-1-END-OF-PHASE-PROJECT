@@ -2,133 +2,200 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dee's Cafe</title>
-    <!-- bootstrap css-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap css
+    <link rel="stylesheet" href="css/bootstrap.min.css">-->
     <!--main css-->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/m.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <!--<link rel="stylesheet" href="css/m.css"> Style CSS -->
+     <!--Style CSS
+     <link rel="stylesheet" href="CSS/style.css">-->
     <link rel="stylesheet" href="CSS/style1.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/styled.css">
-	<!-- Demo CSS-->
-	<link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
 
-
-    <!--font awesome js-->
-    <script src="js/all.js"></script>
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
-    <!--magnifix popup-->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../Estilos/estilos.css">
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/stylef.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
+<body onload="onloadAll()">
+    <!-- navbar
+    <nav class="navbar page">
+        <div class="navbar-center">
+            <button class="toggle-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="nav-link">home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">products</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">about</a>
+                </li>
+                <li>
+                <a href="#special-items" class="nav-link">Menu</a>
+            </li>
+            <li><a onclick="home_page()" class="active text-white">Home Page</a></li>
+<li><a data-toggle="modal" data-target=".orderCart">Delivery of goods<div style="width: 20px;height: 20px;background: #fb9200;position: absolute;top: 25px;margin-left: 80px;border-radius: 50%"><p id="order_number" style="position: absolute;margin-top: -30px;margin-left: 7px;color: #fff;font-size: 80%">0</p></div> </a></li>
+<li><a >Contact</a></li>
+<li><a id="menu_login_button"  data-toggle="modal" data-target=".login">Log in</a></li>
+<li ><a id="menu_account_login" class="menu_account_hide" style="display: none;"></a></li>
+</ul>
+<div id="menu_logout">
+    <div id="menu_header22" class="khung p-3" style="margin: 0 auto;width: 200px; background: orange; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;padding: 0.5rem;position: absolute;z-index: 999;margin-left: calc(100vw - 250px);margin-top: -25px;display: none;">
+          <p id="hello_user" class="text-white" style="opacity: 0.9"></p>
+          <div id="quanlydon" class="box p-1" style="height: 35px;display: none;">
+            <a href="/dashboard.html">
+            <p><i class="fa fa-list-alt text-white mr-3" aria-hidden="true"></i>Darshbord</p></a>
+          </div>
+          <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-lg22"  style="height: 35px">
 
-<body>
-<!--social icons-->
-    <div class="container-fluid info p-3" id="top-icons">
-        <div class="row">
-            <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
-                <div class="info-icons p-2">
+            <p ><i class="fa fa-list-alt text-white mr-3" aria-hidden="true"></i>My application</p>
 
-                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-twitter fa-2x"></i></a>
-                    <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-yelp fa-2x"></i></a>
-                </div>
-                <h2 class="primary-color p-2 text-capitalize text-primary">MEAT YOU HERE!</h2>
+          </div>
+          <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-sm33"  style="height: 35px">
+
+            <p ><i class="fa fa-key text-white mr-3" aria-hidden="true"></i>Change Password</p>
+
+          </div>
+
+
+          <div class="box p-1" style="height: 35px">
+
+            <p onclick="Logout()"><i class="fa fa-sign-out text-white mr-3" aria-hidden="true"></i>Log out</p>
+          </div>
+    </div>
+        </div>
+          -- logo --
+            <img src="" class="nav-logo" alt="store logo">
+            <div class="cart-btn">
+                <span class="nav-icon toggle-cart">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
             </div>
         </div>
-    </div>
-    <!--end of social icons-->
+    </nav>-->
+
+    <div class="container-fluid p-0">
+
+      <nav  id="menu" style="position: fixed;z-index: 999;">
+
+        <label class="logo">Dee's Cafe</label>
+        <ul>
+
+  <li><a onclick="home_page()" class="active text-white">Home Page</a></li>
+  <li><a data-toggle="modal" data-target=".orderCart">Cart Order<div style="width: 20px;height: 20px;background: #fb9200;position: absolute;top: 25px;margin-left: 80px;border-radius: 50%"><p id="order_number" style="position: absolute;margin-top: -30px;margin-left: 7px;color: #fff;font-size: 80%">0</p></div> </a></li>
+  <li><a >Contact</a></li>
+  <li><a id="menu_login_button"  data-toggle="modal" data-target=".login">Log in</a></li>
+  <li ><a id="menu_account_login" class="menu_account_hide" style="display: none;"></a>
+
+
+  </li>
+  </ul>
+
+  <div id="menu_logout">
+  <div id="menu_header22" class="khung p-3" style="margin: 0 auto;width: 200px; background: orange; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;padding: 0.5rem;position: absolute;z-index: 999;margin-left: calc(100vw - 250px);margin-top: -25px;display: none;">
+        <p id="hello_user" class="text-white" style="opacity: 0.9"></p>
+        <div id="quanlydon" class="box p-1" style="height: 35px;display: none;">
+          <a href="/dashboard.html">
+          <p><i class="fa fa-list-alt text-white mr-3" aria-hidden="true"></i>Darshbord</p></a>
+        </div>
+        <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-lg22"  style="height: 35px">
+
+          <p ><i class="fa fa-list-alt text-white mr-3" aria-hidden="true"></i>My application</p>
+
+        </div>
+        <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-sm33"  style="height: 35px">
+
+          <p ><i class="fa fa-key text-white mr-3" aria-hidden="true"></i>Change Password</p>
+
+        </div>
+
+
+        <div class="box p-1" style="height: 35px">
+
+          <p onclick="Logout()"><i class="fa fa-sign-out text-white mr-3" aria-hidden="true"></i>Log out</p>
+        </div>
+  </div>
+      </div>
+
+  </nav>
+
+
+    <!-- hero -->
+    <section class="page-hero">
+        <div class="section-center">
+            <h3 class="page-hero-title"><a href="#products">Dee's</a> Cafe</h3>
+        </div>
+    </section>
+    <!-- end of hero -->
     <!--header section-->
-    <header id="header">
+    <header id="headers">
         <div class="containers">
             <div class="row height-98 align-items-center justify-content-center">
                 <div class="col">
-                    <div class="banner text-center">
+                    <!--<div class="banner text-center">
                         <h1 class="display-1 text-capitalize w-50 mx-auto">
-                            <small>Dee's</small><strong class="primary-color text-warning">Cafe</strong>
+                            <small>Dee's</small><strong class="primary-color">Cafe</strong>
                         </h1>
-
-
-                         <!--Add-->
-                        <a href="order.html" class="btn main-btn sushi-btn my-4 text-capitalize text-primary">Order online</a>
-                        <a href="#book-table" class="btn main-btn sushi-btn my-4 text-capitalize text-primary" data-toggle="open-popup">Book Tables</a>
-
-
-                        <a href="#exampleModal" class="btn main-btn sushi-btn my-4 text-capitalize text-primary" data-toggle="modal">Sign In</a>
-
-                    </div>
+                        <a href="#products" class="btn main-btn sushi-btn my-4 text-capitalize">order online</a>
+                        <a href="#book-table" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="open-popup">book tables</a>
+                        <a href="#exampleModal" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="modal">Sign In</a>
+                    </div>-->
                 </div>
             </div>
         </div>
         <a href="#special-items" class="btn header-link primary-color"><i class="fas fa-arrow-down"></i></a>
     </header>
     <!--end of header section-->
-    <!---->
-    <nav class="navbar navbar-expand-lg">
-        <a href="#" class="navbar-brand text-uppercase primary-color text-primary">Dee's Treats</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
-            <div class="toggler-btn">
-                <div class="bar bar1"></div>
-                <div class="bar bar2"></div>
-                <div class="bar bar3"></div>
-            </div>
+    <form class="form-inline d-none d-lg-block mr-5">
+        <!--<button class="btn nav-btn text-capitalize" type="button">order online</button>-->
+        <button><a href="#book-table" data-toggle="open-popup">book tables</a></button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sign up/Log In</button>
 
-        </button>navbar
-        <!--links-->
-        <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a href="#special-items" class="nav-link text-capitalize">Special items</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu" class="nav-link text-capitalize">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link text-capitalize">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#reviews" class="nav-link text-capitalize">Reviews</a>
-                </li>
+    </form>
 
 
-
-
-
-            </ul>
-            <!--Add-->
-            <form class="form-inline d-none d-lg-block mr-5">
-                <!--<button class="btn nav-btn text-capitalize" type="button">order online</button>-->
-                <button class="btn btn-primary"><a href="#book-table" data-toggle="open-popup">Book tables</a></button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sign up/Log In</button>
-
-            </form>
-        </div>
-    </nav>
-    <!--end of navbar-->
     <!--menuitems-->
     <section class="py-5" id="special-items">
+        <h2>Special Meals</h2>
         <div class="containers my-5">
             <div class="row parent-container">
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                     <div class="item-container">
-                        <img src="img/fd.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                        <img src="/img/lobster.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
-                            <h1 class="text-uppercase text-center item-link px-3" onclick="window.location.href = 'order1.html' ">menu item</h1>
+                            <h1 class="text-uppercase text-center item-link px-3" onclick="window.location.href = '#products' ">Order Now!</h1>
 
                     </div>
                 </div>
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/sp.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/dessert.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
-                                <h1 class="text-uppercase text-center item-link px-3 "onclick="window.location.href = 'order1.html'">menu item</h1>
+                                <h1 class="text-uppercase text-center item-link px-3 "onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
                         </div>
                     </div>
@@ -137,34 +204,34 @@
                         <div class="item-container">
                             <img src="img/pasta.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
-                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
                         </div>
                     </div>
                  <!--menu items-->
                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/lamb.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/fries.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
-                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
                         </div>
                     </div>
                  <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/fries.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/lamb.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
-                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
                         </div>
                     </div>
                  <!--menu items-->
                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/dessert.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/chicken biryani.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
-                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = 'order1.html'">menu item</h1>
+                                <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
                         </div>
                     </div>
@@ -173,227 +240,211 @@
     </section>
     <!--end of menuitems-->
 
+    <!-- end of navbar -->
+    <div class="modal fade bd-example-modal-lg22" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" >
+          <div class="modal-content p-3" style="width: 150%;left: -200px;">
+            <p class="font-weight-bold" style="font-size: 110%">My order</p>
+
+            <div data-spy="scroll" data-target="#myScrollspy" data-offset="10"
+                        style="height:520px;overflow-y: scroll;padding-top: 5px;padding-right: 10px;">
+              <table class="table table-borderless">
+
+
+        <thead>
+          <tr>
+            <th scope="col" style="width: 20%;font-size: 115%;" >Customer name</th>
+            <th scope="col" style="width: 44%;font-size: 115%;" class="text-center">Food</th>
+            <th scope="col" style="width: 18%;font-size: 115%;" class="text-center">Total amount</th>
+            <th scope="col" style="width: 18%;font-size: 115%;" class="text-center">Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="prinfPaymentUser">
+
+
+        </tbody>
 
 
 
-    <!--about-->
-    <section id="about" class="py-5">
-        <div class="containers">
-            <div class="row">
-                <div class="col-md-6 my-4">
-                    <h1 class="text-uppercase display-3">About us</h1>
-                    <h2 class="text-muted">Yum yum</h2>
-                    <a href="" class="btn main-btn my-4 text-capitalize">Learn More</a>
-                </div>
-                <div class="col-md-6 about-pictures my-4 d-none d-lg-block">
-                    <img src="img/pizza.jpg" alt="menu" class="img-1 img-thumbnail about-image btn-primary">
-                    <img src="img/beef.jpg" alt="menu" class="img-3 img-thumbnail about-image btn-primary">
-                    <img src="img/pork.jpg" alt="menu" class="img-2 img-thumbnail about-image btn-primary">
-                    <img src="img/starter.jpg" alt="menu" class="img-4 img-thumbnail about-image btn-primary">
-                    <img src="img/burger.jpg" alt="menu" class="img-5 img-thumbnail about-image btn-primary">
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!--end of about-->
-    <main>
-        <!-- Start DEMO HTML-->
-   <div class="cart-modal-overlay">
-       <div class="cart-modal">
-         <i id="close-btn text-primary" class="fas fa-times"></i>
-           <h1 class="cart-is-empty">Cart is empty</h1>
-
-           <div class="product-rows">
-           </div>
-           <div class="total">
-             <h1 class="cart-total">TOTAL</h1>
-               <span class="total-price">Ksh0</span>
-                 <button class="purchase-btn text-primary">PURCHASE</button>
-           </div>
-         </div>
-   </div>
-
-   <!--   end of cart modal -->
-     <div class="cart-btn">
-       <i id="cart" class="fas fa-shopping-cart"></i>
-         <span class ="cart-quantity">0</span>
-     </div>
-   <!--  products  -->
-     <div class="items-container">
-       <div class="card-1 card">
-         <img class="product-image" src="/img/beef.jpg" alt="beef">
-           <button class="add-to-cart">Add to cart</button>
-             <span class="product-price">Ksh300</span>
-       </div>
-       <div class="card-2 card">
-         <img class="product-image" src="/img/sp.jpg" alt="Pasta">
-         <button class="add-to-cart">Add to cart</button>
-           <span class="product-price">Ksh400</span>
-       </div>
-       <div class="card-3 card">
-         <img class="product-image" src="/img/dessert.jpg" alt="Dessert">
-           <button class="add-to-cart">Add to cart</button>
-             <span class="product-price">Ksh150</span>
-       </div>
-       <div class="card-4 card">
-         <img class="product-image" src="img/lamb.jpg" alt="Lamb">
-            <button class="add-to-cart">Add to cart</button>
-           <span class="product-price">Ksh400</span>
-       </div>
-       <div class="card-5 card">
-         <img class="product-image" src="/img/lobster.jpg" alt="Lobster">
-         <button class="add-to-cart">Add to cart</button>
-         <span class="product-price">Ksh500</span>
-       </div>
-     </div>
-        <!-- END DEMO HTML-->
-    </main>
-
-    <!--reviews-->
-    <section id="reviews" class="py-5">
-        <div id="slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <!--carousel item-->
-                <div class="carousel-item active">
-                    <div class="containers">
-                        <div class="row">
-                            <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
-                                <!--image-->
-                                <div class="align-self-center ml-3">
-                                    <img src="img/yoda.jpg" alt="" class="rounded-circle review-img">
-                                </div>
-                                <!--text-->
-                                <div class="review-text px-5">
-                                    <h2 class="text-capitalize mb-3 primary-color text-primary">customer name</h2>
-                                    <p class="lead text-muted">Great food</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end of carousel item-->
-                <!--carousel item-->
-                <div class="carousel-item ">
-                        <div class="containers">
-                            <div class="row">
-                                <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
-                                    <!--image-->
-                                    <div class="align-self-center ml-3">
-                                        <img src="img/chef.jpg" alt="" class="rounded-circle review-img">
-                                    </div>
-                                    <!--text-->
-                                    <div class="review-text px-5">
-                                        <h2 class="text-capitalize mb-3 primary-color text-primary">Muema</h2>
-                                        <p class="lead text-muted">Yummy meals ,thank you Dee's</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of carousel item-->
-                    <!--carousel item-->
-                <div class="carousel-item ">
-                        <div class="containers">
-                            <div class="row">
-                                <div class="col-lg-10 mx-auto d-flex justify-content-between review-item py-3">
-                                    <!--image-->
-                                    <div class="align-self-center ml-3">
-                                        <img src="img/delivery.jpg" alt="" class="rounded-circle review-img">
-                                    </div>
-                                    <!--text-->
-                                    <div class="review-text px-5">
-                                        <h2 class="text-capitalize mb-3 primary-color text-primary">customer name</h2>
-                                        <p class="lead text-muted">Will definitely be back!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of carousel item-->
-
-
-            </div>
-            <!--carousel controls-->
-            <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-
-            <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-        </div>
-
-    </section>
-
-
-
-
-    <!--end of reviews-->
-<!-- Button trigger modal  (Sign up/sign in)
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Sign Up
-  </button>-->
-
-
- <!--Add-->
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="container" id="container">
-            <div class="logo">
-                <img src="/img/bckg.jpg" alt="logo"/>
-            </div>
-            <div>
-                    <div class="form-container sign-up-container">
-                            <form action="#">
-                                <input type="email" placeholder="Email" id="email" />
-                                <span id="error-email"></span>
-                                <input type="password" placeholder="Password" id="password"/>
-                                <span id="error-password"></span>
-                                <button id="register">Sign Up</button>
-                            </form>
-                        </div>
-                        <div class="form-container sign-in-container">
-                            <form action="#">
-
-                                <input type="email" placeholder="Email" id="login-email" />
-                                <span id="login-error-email"></span>
-                                <input type="password" placeholder="Password" id="login-password"/>
-                                <span id="login-error-password"></span>
-                                <button id="sign-in">Sign in</button>
-                            </form>
-                        </div>
-                        <div class="overlay-container">
-                            <div class="overlay">
-                                <div class="overlay-panel overlay-left">
-                                    <h1>Welcome Back!</h1>
-                                    <p>Stay connected with us please login with your personal info</p>
-                                    <button class="ghost" id="signIn">Sign In</button>
-                                </div>
-                                <div class="overlay-panel overlay-right">
-                                    <h1>Welcome to Dee's</h1>
-                                    <p>We are the best in the kitchen</p>
-                                    <button class="ghost" id="signUp">Sign Up</button>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-        </div>
+      </table>
+      </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-      <!--Add-->
+      <div class="modal fade bd-example-modal-sm33 mt-5" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel33" aria-hidden="true" >
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="iconpopup " style="margin: 0 auto; width: 27%;height: 100%; margin-top: 20%;">
+                <img id="notick" src="tick.png" width="100%" >
+                <img id="errortick" src="ticknot.png" width="100%" style="display: none;" >
+                <img id="changeimg" src="defender.png" width="100%" style="display: none;">
+            </div>
 
-      <div class="page">
-        <!--<div class="page__container">
+            <div id="changepass" class=" iconpopup mt-4" style="margin: 0 auto; width: 80%;margin-bottom: 10%;">
+                <p class="text-center mb-3" style="font-weight: bold;margin-bottom: 2%;font-size: 120%">Change Password</p>
+                <p class="mt-3" style="margin-bottom: 2%;">Enter Old password</p>
+                <input type="password" name="pass" id="passcurrent" class="form-control " >
+                <p class="mt-1" style="margin-bottom: 2%;">Enter New password</p>
+                <input type="password" name="pass" id="passnew" class="form-control " >
+                <p class="mt-1" style="margin-bottom: 2%;">Enter New Password</p>
+                <input type="password" name="pass" id="passnewrepeat" class="form-control " >
+                <p id="notification_change_pass" class="mt-4 text-center mb-0 " style="font-size: 90%;color: red;"></p>
+                <button class="btn btn-warning float-right mt-3" onclick="Changepassword()">Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade login mt-5 " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content ">
+
+
+
+                  <div class="cart_box" style="width: 100%;margin: auto;">
+              <div class="login_img_box float-left" style="width: 50%;height: 450px;background: pink;">
+            <img src="img/table-3084384_1920.jpg" width="100%" height="100%">
+          </div>
+
+          <div id="login_box" >
+              <div class="login_info_box float-right p-5" style="width: 50%;height: 450px;">
+          <p class="text-center font-weight-bold" style="font-size: 140%">Log in</p>
+          <label class="font-weight-bold mt-3">user name</label>
+          <input id="usernameLogin" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter username" style="outline: none;">
+          <label class="mt-3 font-weight-bold">Password</label>
+          <input id="passwordLogin" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter password">
+          <button onclick="Login()" class="btn btn-primary mt-4" style="width: 100%;background: #fb9200;border: 0;outline: none;">Log in</button>
+          <p id="statusLogin" class="text-center mt-4" style="font-size: 90%;color: red;"></p>
+          <p onclick="move_signup()" class="text-center mt-3" style="font-size: 90%">You do not have an account, Sign up<strong style="color:#fb9200 ">here</strong> </p>
+          </div>
+          </div>
+
+
+
+          <div id="signup_box" style="display: none;">
+          <div class="signup_info_box float-right p-4 pl-5 pr-5" style="width: 50%;height: 450px;">
+          <p class="text-center font-weight-bold" style="font-size: 140%">Registration</p>
+          <label class="font-weight-bold mt-1">user name</label>
+          <input id="usernameSignup" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter username" style="outline: none;">
+          <label class="mt-3 font-weight-bold">Password</label>
+          <input id="passwordSignup" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter password">
+          <label class="mt-3 font-weight-bold">Confirm Password</label>
+          <input id="RepasswordSignup" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Confirm Password">
+          <button onclick="Signup()" class="btn btn-primary mt-4" style="width: 100%;background: #fb9200;border: 0;outline: none;">Log in</button>
+          <p id="statusSignup" class="text-center mt-3 mb-1" style="font-size: 90%;color: red;"></p>
+          <p onclick="move_login()" class="text-center mt-0" style="font-size: 90%">You already have an account, Sign in<strong  style="color:#fb9200 ">Here</strong> </p>
+          </div>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="modal fade orderCart mt-3 " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content ">
+
+
+                  <div id="checkout_form" class="cart_box pl-5 pt-4 shadow-sm mt-3 pb-4" style="width: 100%;margin: auto;">
+              <p class="ml-2" style="font-size: 130%;font-weight: bold;">Your Order</p>
+              <div data-spy="scroll" data-target="#myScrollspy" data-offset="10"
+                        style="height:340px;overflow-y: scroll;padding-top: 5px;padding-right: 10px;">
+              <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 40%;font-size: 115%;" >Product</th>
+            <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Quantity</th>
+            <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Price</th>
+            <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Manipulation</th>
+          </tr>
+        </thead>
+        <tbody id="prinf_order_cart">
+
+
+
+        </tbody>
+      </table>
+      </div>
+      <div class="float-left pl-2" style="width: 30%;">
+          <p class="font-weight-bold mt-2" style="font-size: 115%">Total</p>
+      </div>
+      <div  class="float-right pr-5" style="width: 30%;">
+          <p id="total_money" class="font-weight-bold float-right mt-2" style="font-size: 115%"> </p>
+      </div>
+      <div style="clear: both;"></div>
+      <div onclick="checkout()" class="btn mr-5 text-white float-right" style="background: #fb9200;">Payment</div>
+      <div style="clear: both;"></div>
+          </div>
+
+
+
+      <div id="payment_form" class="p-5" style="width: 100%;height: 400px;display: none;">
+                <div class="choose_box float-left" style="width: 60%;">
+                <p class="font-weight-bold" style="font-size: 130%">Payment</p>
+                <p class="mb-2 font-weight-bold">Payment options</p>
+                <div class="payment_choose_box" style="width: 60%">
+                <div class="float-left pr-1 pb-1" style="width: 50%;height: 80px;">
+                <img onclick="viettinbank()" class="payment_vietinbank " src="/images/Vietinbank201808092833.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
+                </div>
+                <div class="float-right pr-1 pb-1" style="width: 50%;height: 80px;">
+                <img onclick="donga()" class="payment_donga" src="/images/DongABank201808092734.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
+                </div>
+                <div class="float-left pr-1 pb-1" style="width: 50%;height: 80px;">
+                <img onclick="nama()" class="payment_nama" src="/images/NamABank201808092054.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
+                </div>
+                <div class="float-right pr-1 pb-1" style="width: 50%;height: 80px;">
+                <img onclick="sacom()" class="payment_sacom pl-3 pr-3" src="/images/images.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
+                </div>
+                <div style="clear: both;"></div>
+                </div>
+                </div>
+                <div class="choose_box p-3 float-right" style="width: 40%;height: 100px;">
+                    <label for="exampleInputEmail1">Recipient's name</label>
+
+      <!-- <div class="p-2" style="width: 100%;height: 40px;border: 1px solid #ccc;border-radius: 5px;">
+      <p id="name_customer"></p>
+      </div> -->
+      <input id="name_customer" type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+      <label for="exampleInputEmail1" class="mt-3">Phone number</label>
+      <input id="phone_customer" type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your phone number">
+      <label for="exampleInputEmail1" class="mt-3">Address</label>
+      <input id="address_customer" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+      <button onclick="payment()" class="btn btn-primary float-right mt-3">Order</button></div>
+      </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <style type="text/css">
+        .menu_account_show{
+          display: block !important;
+        }
+      </style>
+
+
+
+    <!--Add-->
+
+    <!--<div class="page">
+        <div class="page__container">
           <a href="#book-table" class="open-popup">open popup</a>
-        </div>-->
-      </div>
-      <div id="book-table" class="popup">
+        </div>
+      </div>-->
+
+         <div id="book-table" class="popup">
         <div class="popup__container">
 
           <div class="popup__content">
@@ -403,11 +454,12 @@
                 </div>
 
                 <div style="padding-bottom: 18px;font-size : 24px;">Table Reservation</div>
+
+          <div style="padding-bottom: 18px;font-size : 18px;">We would be glad to reserve a table for you at our restaurant!</div>
                 <a href="#" class="popup__close">
             <span class="screen-reader">close</span>
           </a>
-          <div style="padding-bottom: 18px;font-size : 18px;">We would be glad to reserve a table for you at our restaurant!</div>
-                <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
+          <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
                 <input type="text" id="data_3" name="data_3" style="max-width : 400px;" class="form-control"/>
                 </div>
                 <div style="padding-bottom: 18px;">Phone<br/>
@@ -425,7 +477,7 @@
                 <div style="padding-bottom: 18px;">Time<span style="color: red;"> *</span><br/>
                 <input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control"/>
                 </div>
-                <div style="padding-bottom: 18px;">Number of Customers<span style="color: red;"> *</span><br/>
+                <div style="padding-bottom: 18px;">Number of Attendees<span style="color: red;"> *</span><br/>
                 <select id="data_8" name="data_8" style="max-width : 250px;" class="form-control"><option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -444,7 +496,7 @@
                 </div>
                 <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
                 <div>
-                <script src="https://www.100forms.com/js/FORMKEY:UR9C5989DMGL/SEND:EFBCH8DZJPEN.com" type="text/javascript"></script>
+                <script src="https://www.100forms.com/js/FORMKEY:UR9C5989DMGL/SEND:king001gasine@gmail.com" type="text/javascript"></script>
                 </div>
                 </form>
 
@@ -478,78 +530,176 @@
         </div>
       </div>
 
-      <main>
-        <!--DEMO HTML-->
-   <div class="cart-modal-overlay">
-       <div class="cart-modal">
-         <i id="close-btn" class="fas fa-times"></i>
-           <h1 class="cart-is-empty">Cart is empty</h1>
+      <!---Add-->
+            <span>Place Your order Now!</span>
 
-           <div class="product-rows">
-           </div>
-           <div class="total">
-             <h1 class="cart-total">TOTAL</h1>
-               <span class="total-price">Ksh0</span>
-                 <button class="purchase-btn">PURCHASE</button>
-           </div>
-         </div>
-   </div>
-
-   <!--   end of cart modal -->
-     <!-- <div class="cart-btn">
-       <i id="cart" class="fas fa-shopping-cart"></i>
-         <span class ="cart-quantity">0</span>
-     </div> -->
-   <!--  products  -->
-     <!-- <div class="items-container">
-       <div class="card-1 card">
-         <img class="product-image" src="/img/" alt="">
-           <button class="add-to-cart">Add to cart</button>
-             <span class="product-price">Ksh1395</span>
-       </div>
-       <div class="card-2 card">
-         <img class="product-image" src="./img/image-2.webp" alt="">
-         <button class="add-to-cart">Add to cart</button>
-           <span class="product-price">Ksh1175</span>
-       </div>
-       <div class="card-3 card">
-         <img class="product-image" src="./img/" alt="">
-           <button class="add-to-cart">Add to cart</button>
-             <span class="product-price">Ksh1150</span>
-       </div>
-       <div class="card-4 card">
-         <img class="product-image" src="./img/image-4.webp" alt="">
-            <button class="add-to-cart">Add to cart</button>
-           <span class="product-price">Ksh1575</span>
-       </div>
-       <div class="card-5 card">
-         <img class="product-image" src="/img" alt="">
-         <button class="add-to-cart">Add to cart</button>
-         <span class="product-price">Ksh230</span>
-       </div>
-     </div> -->
-        <!-- END DEMO HTML-->
-    <!-- </main> -->
+    <!-- products -->
+    <section class="products" id="products">
 
 
-    <!--social icons-->
-    <div class="container-fluid info p-3">
-            <div class="row">
-                <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
-                    <div class="info-icons p-2">
+    </section>
 
-                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="#" class="mr-2 primary-color text-primary"><i class="fab fa-yelp fa-2x"></i></a>
-                    </div>
-                    <h2 class="primary-color p-2 uppercase text-primary">DEE'S CAFE</h2>
+    <div id="list_food_home" class="container">
+        <div class="row" id="prinf_food">
+
+
+        </div>
+    </div>
+    <!-- end of products -->
+
+    <<div class = "container">
+        <div class = "meal-wrapper">
+          <div class = "meal-search">
+            <h2 class = "title">Find Meals For Your Ingredients</h2>
+            <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+              <cite>- Jamie Oliver</cite>
+            </blockquote>
+
+            <div class = "meal-search-box">
+              <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+              <button type = "submit" class = "search-btn btn" id = "search-btn">
+                <i class = "fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class = "meal-result">
+            <h2 class = "title">Your Search Results:</h2>
+            <div id= "meal">
+              <!-- meal item -->
+              <!-- <div class = "meal-item">
+                <div class = "meal-img">
+                  <img src = "food.jpg" alt = "food">
+                </div>
+                <div class = "meal-name">
+                  <h3>Potato Chips</h3>
+                  <a href = "#" class = "recipe-btn">Get Recipe</a>
+                </div>
+              </div> -->
+              <!-- end of meal item -->
+            </div>
+          </div>
+
+
+          <div class = "meal-details">
+            <!-- recipe close btn -->
+            <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+              <i class = "fas fa-times"></i>
+            </button>
+
+            <!-- meal content -->
+            <div class = "meal-details-content">
+              <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+              <p class = "recipe-category">Category Name</p>
+              <div class = "recipe-instruct">
+                <h3>Instructions:</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+              </div>
+              <div class = "recipe-meal-img">
+                <img src = "food.jpg" alt = "">
+              </div>
+              <div class = "recipe-link">
+                <a href = "#" target = "_blank">Watch Video</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- WhatsApp floating Button -->
+    <div class="whatsApp-floating-button">
+        <a href="https://api.whatsapp.com/send?phone=254758752375" class="float" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp my-float"></i>
+        </a>
+    </div>
+    <!-- End of WhatsApp floating Button -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Dee's Cafe®️</h3>
+                <p>
+                    Enjoy every meal
+                </p>
+                <div class="social">
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+            <div class="column links">
+                <h3>Information</h3>
+                <ul>
+                    <li>
+                        <a href="#faqs">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="#cookiepolicy">Cookies Policy</a>
+                    </li>
+                    <li>
+                        <a href="#terms">Terms Of Service</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column links">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <a href="tel:254758752375" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i> +254758752375</a>
+                    </li>
+                    <li>
+                        <a href="mailto:king0001gasine@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i>contact@dee'scafe.com</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-signs"></i>Somewhere</a>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="column subscribe">
+                <h3>Newsletter</h3>
+                <div>
+                    <form name="form1" action="#!">
+                        <input class ='newsletter-mail-input'type="email" name='text1' placeholder="Your email id here" />
+                        <button type="button" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>-->
         </div>
-        <!--end of social icons
-        <a href="#top-icons" id="back-to-top" class="p-1"><i class="fas fa-arrow-up primary-color fa-3x"></i></a>
-    -->
+        <div class="row copyright">
+            <div class="footer-menu">
+                <a href="#home">Home</a>
+                <a href="#">Products</a>
+                <a href="#about">About</a>
+            </div>
+            <p>Copyright &copy; 2022 Dee's Cafe.</p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- app js -->
+    <script src="/js2/app.js"></script>
+    <!-- Jquery, Popper & js Plugins for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 
     <!--jquery-->
@@ -561,135 +711,16 @@
     <!--magnific popup-->
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
     <!--js-->
+    <script  src="/scriptf.js"></script>
     <!--Add-->
+
      <script src="js/login.js"></script>
      <script src="js/script.js"></script>
      <script  src="js/scriptd.js"></script>
-
-
-    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-database.js"></script>
-    <!--Add-->
-    <!--Handle page events-->
-    <script>
-        // register
-        document
-          .querySelector("#register")
-          .addEventListener("click", function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            let email = document.querySelector("#email").value;
-            let password = document.querySelector("#password").value;
-            if (email.length<1) {
-          document.getElementById('error-email').innerHTML = " Please Enter Your Email *";
-      }
-      if (password.length<1) {
-          document.getElementById('error-password').innerHTML = " Please Enter Your password *";
-      }
-            firebase
-              .auth()
-              .createUserWithEmailAndPassword(email, password)
-              .then(data =>{
-                  console.log("hello success",data.user)
-                  if(data.user){
-                      window.location.href="index.html"
-                  }
-              })
-              .catch(function(error) {
-                // Handle Errors
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                document.getElementById('error-password').innerHTML = errorMessage;
-              });
-          });
-        //sign in
-        document.querySelector("#sign-in")
-        .addEventListener("click", function(e)
-         {
-          e.preventDefault();
-          e.stopPropagation();
-          let email = document.querySelector("#login-email").value;
-          let password = document.querySelector("#login-password").value;
-          if (email.length<1) {
-          document.getElementById('login-error-email').innerHTML = " Please Enter Your Email *";
-           }
-          if (password.length<1) {
-              document.getElementById('login-error-password').innerHTML = " Please Enter Your password *";
-          }
-          firebase.auth().signInWithEmailAndPassword(email, password)
-          .then(data =>{
-                  console.log("hello success",data.user.uid)
-                  var uid = data.user.uid;
-                  // alert(uid);
-                  if(data.user){
-                      console.log("save into firebase" , uid);
-
-                      db.collection("users")
-                          .add({
-                          email: data.user.email,
-                          uid: data.user.uid
-
-
-                          })
-                          .then(function(docRef) {
-                              console.log(docRef);
-                              window.location.href="index.html"
-                          })
-                          .catch(function(error) {
-                              //alert(error);
-                          console.error("Error adding document: ", error);
-                          });
+     <script  src="script2.js"></script>
 
 
 
-                  }
-          })
-          .catch(function(error) {
-          // Handle Errors here.
-          let errorCode = error.code;
-          let errorMessage = error.message;
-          });
-        });
 
-  //log out
-        document
-          .querySelector("#sign-out")
-          .addEventListener("click", function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            alert("logout");
-          });
-      </script>
-
-    <script>
-
-     //console.log("helllo");
-
-           // Your web app's Firebase configuration
-           var firebaseConfig = {
-        apiKey: "AIzaSyA31DCogiFh5-6nqka-onPDqXEXefkUD20",
-        authDomain: "uggghh-eaecd.firebaseapp.com",
-        databaseURL: "https://uggghh-eaecd.firebaseio.com",
-        projectId: "uggghh-eaecd",
-        storageBucket: "uggghh-eaecd.appspot.com",
-        messagingSenderId: "1065017607625",
-        appId: "1:1065017607625:web:2831a3b55ee3bd4e"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-
-
-        var database = firebase.database().ref();
-        console.log("database " + database );
-
-       // var userId = firebase.auth().currentUser.uid;
-        database.once('value').then(function(snapshot) {
-        //var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-
-     console.log("The given item is ->  " + snapshot.val().order[2].item);
-});
-</script>
 </body>
 </html>

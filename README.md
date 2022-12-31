@@ -1,7 +1,7 @@
 # Title
 DEE'S CAFE ONLINE FOODS<br>
 This application fetched data from a local server running JSON DB server[http://localhost:3000/meals]<br>and
-[http://localhost:3000/drinks] and firebase.com.
+[http://localhost:3000/drinks] and mealdb api [https://www.themealdb.com/api/json/v1/1/filter.php?i=].
 
 ## Description
 ### Problem Statement<br>
@@ -21,6 +21,7 @@ The application will allow users to order food from anywhere and make reservatio
 * The user should be able to place a food order
 * The user should be able to make reservations
 * The user should be able to leave comments or reviews on service delivery.
+* The user should be able to search for a meal,get its recipe and follow on how to prepare the meal by themselves
 
 
 <br>
@@ -30,7 +31,7 @@ When the user opens the app, they should be able to see;
 * Dummy Sign in(authentication page)
 * Place food orders
 * Book or reserve a table
-* Rate their satisfaction against the services provided by leaving reviews.
+
 
 
 ## Requirements
