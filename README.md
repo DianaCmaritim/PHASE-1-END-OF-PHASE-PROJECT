@@ -44,7 +44,7 @@ When the user opens the app, they should be able to see;
 Click Code, choose SSH, then click the clipboard icon to copy the information needed about this repository.
 
 In your terminal, type git clone, and paste the info you copied from GitHub. The command should look something like this (but with your personal account name):
-  git clone https://github.com/DianaCmaritim/PHASE-1-END-OF-PHASE-PROJECT
+  git clone https://github.com/DianaCmaritim/PHASE-1-END-OF-PHASE-PROJECT1
 <br>
 This will create a copy of the repo on your local machine
 
