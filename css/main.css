@@ -1,17 +1,17 @@
 /*white #c9c1ac*/
-/*red color #d3325f*/
+/*red color #d3325f
 
 .info{
-    background: #c9c1ac;
-}
+    background: #e4a300; 
+}*/
 body{
    font-family: 'Stylish', sans-serif;
     color: #c9c1ac;
-    background: url(/img/bckg.jpg)center/cover fixed no-repeat;
+    background: url(../img/table-3084384_1920.jpg)center/cover fixed no-repeat;
 
 }
 
-.primary-color{
+/*.primary-color{
     color: #d3325f;
 }
 
@@ -24,11 +24,11 @@ body{
 }
 .info a:hover{
     color: #242424;
-}
+}*/
 /*header*#############*/
 #header{
     min-height:calc(100vh - 94px);
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/beef.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/table-710040_1920.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -41,8 +41,8 @@ body{
 }
 
 .banner h1{
-    border-top: 6px dotted #c9c1ac;
-    border-bottom: 6px dotted #c9c1ac;
+    border-top: 6px dotted #f8bb21;
+    border-bottom: 6px dotted #f5b81d;
     animation: fromLeft;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -68,13 +68,13 @@ body{
     color: #d3325f;
     font-size: 2rem;
     border: 2px solid #d3325f;
-    transition: all 1s ease-in-out;
+    transition:all 1s ease-in-out;
 }
 
 .main-btn:hover{
     color: #242424;
     border: 2px solid #c9c1ac;
-    background: #c9c1ac;
+    background: #42cd10;
 }
 .sushi-btn{
     animation: fromRight;
@@ -125,7 +125,7 @@ body{
     }
 }
 
-/* navbar*/
+/* navbar
 .navbar {
     background: #c9c1ac;
     padding: 20px 20px;
@@ -134,7 +134,7 @@ body{
 
 .navbar-background {
     padding: 5px 20px;
-
+    
 }
 
 .navbar-brand {
@@ -195,7 +195,7 @@ body{
 
 .change .bar3 {
     transform: rotate(45deg) translate(-5px, -8px);
-}
+}*/
 
 
 
@@ -218,7 +218,7 @@ body{
 }
 .item-container:hover .item-img{
     transform: scale(1.2);
-    opacity: 0.5;
+    opacity: 0.5; 
 }
 
 .item-link{
@@ -249,11 +249,11 @@ body{
     outline-offset: 0.8rem;
 }
 
-/*######MENU*/
-
+/*######MENU
+ 
 #menu{
-    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7));
-}
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)); 
+}*/
 
 .special{
     border: 3px solid #d3325f;
@@ -321,7 +321,7 @@ body{
     opacity: 0.5;
 
 }
-/*review section*/
+/*review section
 .review-item {
     background: rgba(255, 255, 255, 0.7);
     clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%)
@@ -331,8 +331,8 @@ body{
 
 .review-img {
     width: 150px;
-}
-/*footer*/
+}*/
+/*footer
 #back-to-top {
     background: #c9c1ac;
     border-radius: 10px;
@@ -343,5 +343,5 @@ body{
     position: fixed;
     bottom: 70px;
     right: 10px;
-}
+}*/
 

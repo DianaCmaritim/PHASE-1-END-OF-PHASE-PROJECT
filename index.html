@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">-->
     <!--main css-->
     <link rel="stylesheet" href="css/main.css">
-    <!--<link rel="stylesheet" href="css/m.css"> Style CSS -->
-     <!--Style CSS
-     <link rel="stylesheet" href="CSS/style.css">-->
-    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="css/m.css"> <!--Style CSS -->
+     <!--Style CSS -->
+     <link rel="stylesheet" href="css/style1.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/styleR.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel = "stylesheet" href = "style.css">
 
@@ -21,9 +23,10 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Custom CSS-->
-    <link rel="stylesheet" href="../Estilos/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <!--Toastify-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <link rel="stylesheet" href="/stylef.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -35,66 +38,6 @@
 
 </head>
 <body onload="onloadAll()">
-    <!-- navbar
-    <nav class="navbar page">
-        <div class="navbar-center">
-            <button class="toggle-nav">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li>
-                    <a href="#home" class="nav-link">home</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">products</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">about</a>
-                </li>
-                <li>
-                <a href="#special-items" class="nav-link">Menu</a>
-            </li>
-            <li><a onclick="home_page()" class="active text-white">Home Page</a></li>
-<li><a data-toggle="modal" data-target=".orderCart">Delivery of goods<div style="width: 20px;height: 20px;background: #fb9200;position: absolute;top: 25px;margin-left: 80px;border-radius: 50%"><p id="order_number" style="position: absolute;margin-top: -30px;margin-left: 7px;color: #fff;font-size: 80%">0</p></div> </a></li>
-<li><a >Contact</a></li>
-<li><a id="menu_login_button"  data-toggle="modal" data-target=".login">Log in</a></li>
-<li ><a id="menu_account_login" class="menu_account_hide" style="display: none;"></a></li>
-</ul>
-<div id="menu_logout">
-    <div id="menu_header22" class="khung p-3" style="margin: 0 auto;width: 200px; background: orange; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;padding: 0.5rem;position: absolute;z-index: 999;margin-left: calc(100vw - 250px);margin-top: -25px;display: none;">
-          <p id="hello_user" class="text-white" style="opacity: 0.9"></p>
-          <div id="quanlydon" class="box p-1" style="height: 35px;display: none;">
-            <a href="/dashboard.html">
-            <p><i class="fa fa-list-alt text-white mr-3" aria-hidden="true"></i>Darshbord</p></a>
-          </div>
-          <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-lg22"  style="height: 35px">
-
-            <p ><i class="fa fa-list-alt text-white mr-3" aria-hidden="true"></i>My application</p>
-
-          </div>
-          <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-sm33"  style="height: 35px">
-
-            <p ><i class="fa fa-key text-white mr-3" aria-hidden="true"></i>Change Password</p>
-
-          </div>
-
-
-          <div class="box p-1" style="height: 35px">
-
-            <p onclick="Logout()"><i class="fa fa-sign-out text-white mr-3" aria-hidden="true"></i>Log out</p>
-          </div>
-    </div>
-        </div>
-          -- logo --
-            <img src="" class="nav-logo" alt="store logo">
-            <div class="cart-btn">
-                <span class="nav-icon toggle-cart">
-                    <i class="fas fa-cart-plus"></i>
-                </span>
-                <div class="cart-items">0</div>
-            </div>
-        </div>
-    </nav>-->
 
     <div class="container-fluid p-0">
 
@@ -105,7 +48,7 @@
 
   <li><a onclick="home_page()" class="active text-white">Home Page</a></li>
   <li><a data-toggle="modal" data-target=".orderCart">Cart Order<div style="width: 20px;height: 20px;background: #fb9200;position: absolute;top: 25px;margin-left: 80px;border-radius: 50%"><p id="order_number" style="position: absolute;margin-top: -30px;margin-left: 7px;color: #fff;font-size: 80%">0</p></div> </a></li>
-  <li><a >Contact</a></li>
+  <li><a href="#book-table" data-toggle="open-popup">book tables</a></li>
   <li><a id="menu_login_button"  data-toggle="modal" data-target=".login">Log in</a></li>
   <li ><a id="menu_account_login" class="menu_account_hide" style="display: none;"></a>
 
@@ -154,26 +97,26 @@
         <div class="containers">
             <div class="row height-98 align-items-center justify-content-center">
                 <div class="col">
-                    <!--<div class="banner text-center">
+                    <!----><div class="banner text-center">
                         <h1 class="display-1 text-capitalize w-50 mx-auto">
                             <small>Dee's</small><strong class="primary-color">Cafe</strong>
                         </h1>
                         <a href="#products" class="btn main-btn sushi-btn my-4 text-capitalize">order online</a>
                         <a href="#book-table" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="open-popup">book tables</a>
                         <a href="#exampleModal" class="btn main-btn sushi-btn my-4 text-capitalize" data-toggle="modal">Sign In</a>
-                    </div>-->
+                    </div>
                 </div>
             </div>
         </div>
         <a href="#special-items" class="btn header-link primary-color"><i class="fas fa-arrow-down"></i></a>
     </header>
     <!--end of header section-->
-    <form class="form-inline d-none d-lg-block mr-5">
-        <!--<button class="btn nav-btn text-capitalize" type="button">order online</button>-->
+   <!-- <form class="form-inline d-none d-lg-block mr-5">
+        <button class="btn nav-btn text-capitalize" type="button">order online</button>
         <button><a href="#book-table" data-toggle="open-popup">book tables</a></button>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Sign up/Log In</button>
 
-    </form>
+    </form>-->
 
 
     <!--menuitems-->
@@ -184,7 +127,7 @@
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                     <div class="item-container">
-                        <img src="img/lobster.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                        <img src="img/chicken biryani.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                             <h1 class="text-uppercase text-center item-link px-3" onclick="window.location.href = '#products' ">Order Now!</h1>
 
@@ -193,7 +136,7 @@
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/dessert.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/lamb.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3 "onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
@@ -202,7 +145,7 @@
                 <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/pasta.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/dessert.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
@@ -220,7 +163,7 @@
                  <!--menu items-->
                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/lamb.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/pasta.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
@@ -229,7 +172,7 @@
                  <!--menu items-->
                  <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
                         <div class="item-container">
-                            <img src="img/chicken biryani.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
+                            <img src="img/lobster.jpg" class="img-fluid img-thumbnail item-img" alt="menu item" >
 
                                 <h1 class="text-uppercase text-center item-link px-3"onclick="window.location.href = '#products'">Order Now!</h1>
                             </a>
@@ -305,7 +248,7 @@
 
                   <div class="cart_box" style="width: 100%;margin: auto;">
               <div class="login_img_box float-left" style="width: 50%;height: 450px;background: pink;">
-            <img src="img/table-3084384_1920.jpg" width="100%" height="100%">
+            <img src="/img_login.jpg" width="100%" height="100%">
           </div>
 
           <div id="login_box" >
@@ -392,13 +335,13 @@
                 <p class="mb-2 font-weight-bold">Payment options</p>
                 <div class="payment_choose_box" style="width: 60%">
                 <div class="float-left pr-1 pb-1" style="width: 50%;height: 80px;">
-                <img onclick="viettinbank()" class="payment_vietinbank " src="/images/Vietinbank201808092833.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
+                <img onclick="viettinbank()" class="payment_vietinbank " src="/images/Paypal.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
                 </div>
                 <div class="float-right pr-1 pb-1" style="width: 50%;height: 80px;">
-                <img onclick="donga()" class="payment_donga" src="/images/DongABank201808092734.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
+                <img onclick="donga()" class="payment_donga" src="/images/mpesa.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
                 </div>
                 <div class="float-left pr-1 pb-1" style="width: 50%;height: 80px;">
-                <img onclick="nama()" class="payment_nama" src="/images/NamABank201808092054.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
+                <img onclick="nama()" class="payment_nama" src="/images/visa.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
                 </div>
                 <div class="float-right pr-1 pb-1" style="width: 50%;height: 80px;">
                 <img onclick="sacom()" class="payment_sacom pl-3 pr-3" src="/images/images.png" width="100%" height="100%" style="border: 1px solid #d7d7d7;">
@@ -437,12 +380,6 @@
 
 
     <!--Add-->
-
-    <!--<div class="page">
-        <div class="page__container">
-          <a href="#book-table" class="open-popup">open popup</a>
-        </div>
-      </div>-->
 
          <div id="book-table" class="popup">
         <div class="popup__container">
@@ -547,65 +484,40 @@
     </div>
     <!-- end of products -->
 
-    <<div class = "container">
-        <div class = "meal-wrapper">
-          <div class = "meal-search">
-            <h2 class = "title">Dee's Meals For Your Ingredients</h2>
-            <blockquote><br>If you cannot come to us,we will bring our food to your kitchen
-              <cite>- Dee'S</cite>
-            </blockquote>
-
-            <div class = "meal-search-box">
-              <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
-              <button type = "submit" class = "search-btn btn" id = "search-btn">
-                <i class = "fas fa-search"></i>
-              </button>
-            </div>
-          </div>
-
-          <div class = "meal-result">
-            <h2 class = "title">Your Search Results:</h2>
-            <div id= "meal">
-              <!-- meal item -->
-              <!-- <div class = "meal-item">
-                <div class = "meal-img">
-                  <img src = "food.jpg" alt = "food">
-                </div>
-                <div class = "meal-name">
-                  <h3>Potato Chips</h3>
-                  <a href = "#" class = "recipe-btn">Get Recipe</a>
-                </div>
-              </div> -->
-              <!-- end of meal item -->
-            </div>
-          </div>
-
-
-          <div class = "meal-details">
-            <!-- recipe close btn -->
-            <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-              <i class = "fas fa-times"></i>
+    <div class = "container3">
+      <div class = "meal-wrapper">
+        <div class = "meal-search">
+          <h2 class = "title">Find Meals For Your Ingredients</h2>
+          <h4>Bringing Dee's to your homes!</h4>
+          <div class = "meal-search-box">
+            <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+            <button type = "submit" class = "search-btn btn" id = "search-btn">
+              <i class = "fas fa-search"></i>
             </button>
+          </div>
+        </div>
 
-            <!-- meal content -->
-            <div class = "meal-details-content">
-              <!-- <h2 class = "recipe-title">Meals Name Here</h2>
-              <p class = "recipe-category">Category Name</p>
-              <div class = "recipe-instruct">
-                <h3>Instructions:</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
-              </div>
-              <div class = "recipe-meal-img">
-                <img src = "food.jpg" alt = "">
-              </div>
-              <div class = "recipe-link">
-                <a href = "#" target = "_blank">Watch Video</a>
-              </div> -->
-            </div>
+        <div class = "meal-result">
+          <h2 class = "title">Your Search Results:</h2>
+          <div id= "meal">
+            <button class="bag-btn" data-id=''><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+
+
+        <div class = "meal-details">
+          <!-- recipe close btn -->
+          <button class="bag-btn" data-id=''><i class="fas fa-shopping-cart"></i></button>
+         <!-- --><button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+            <i class = "fas fa-times"></i>
+          </button>
+
+          <!-- meal content -->
+          <div class = "meal-details-content">
           </div>
         </div>
       </div>
+    </div>
 
 
 
@@ -656,25 +568,18 @@
                 <h3>Contact Us</h3>
                 <ul>
                     <li>
-                        <a href="tel:254717159606" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i> +254758752375</a>
+                        <a href="tel:254717159606" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i> +254717159606</a>
                     </li>
                     <li>
-                        <a href="mailto:king0001gasine@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i>contact@dee'scafe.com</a>
+                        <a href="mailto:maritimdiane96@gmail.com@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i>contact@dee'scafe.com</a>
                     </li>
                     <li>
                         <a href="" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-signs"></i>Somewhere</a>
                     </li>
                 </ul>
             </div>
-            <!--<div class="column subscribe">
-                <h3>Newsletter</h3>
-                <div>
-                    <form name="form1" action="#!">
-                        <input class ='newsletter-mail-input'type="email" name='text1' placeholder="Your email id here" />
-                        <button type="button" class="newsletter-btn">Subscribe</button>
-                    </form>
-                </div>
-            </div>-->
+
+            </div>
         </div>
         <div class="row copyright">
             <div class="footer-menu">
@@ -691,7 +596,7 @@
     <!-- contentful -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <!-- app js -->
-    <script src="/js2/app.js"></script>
+    <script src="/js/app.js"></script>
     <!-- Jquery, Popper & js Plugins for Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -701,20 +606,12 @@
     <!-- Toastify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
-
-    <!--jquery-->
-    <script src="Js/jquery-3.4.1.min.js"></script>
-    <!--bootstrap-->
-    <script src="Js/bootstrap.bundle.min.js"></script>
-    <!--ripple-->
-    <script src="js/jquery.ripples-min.js"></script>
-    <!--magnific popup-->
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>-->
     <!--js-->
     <script  src="/scriptf.js"></script>
-    <!--Add-->
+    <!--Add
 
-     <script src="js/login.js"></script>
+     <script src="js/login.js"></script>-->
      <script src="js/script.js"></script>
      <script  src="js/scriptd.js"></script>
      <script  src="script2.js"></script>

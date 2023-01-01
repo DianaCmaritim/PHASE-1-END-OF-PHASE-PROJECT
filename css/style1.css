@@ -13,8 +13,8 @@ helper to reset default browser's styles from headings
     margin-bottom: var(--rTitleMarginBottom, 0) !important;
 }
 
-/* 
-helper to hide elements that are available only for screen readers. 
+ 
+/*helper to hide elements that are available only for screen readers. 
 */
 
 .screen-reader{
@@ -57,7 +57,7 @@ POPUP
   content: "";
   box-sizing: border-box;
   width: 100%;
-  background-color:#1b0de7;
+  background-color: transparent;
 
   position: fixed;
   left: 0;
@@ -68,7 +68,7 @@ POPUP
   content: "";
   width: 0;
   height: 2px;
-  background-color: #1b0de7;
+  background-color:rgb(15, 115, 245);
 
   position: absolute;
   top: 50%;
@@ -80,10 +80,10 @@ POPUP
   box-sizing: border-box;  
   
 
-  height: calc(100vh - 40px); /* 1 */
+  height: calc(100vh - 20px);  /*1 */
   margin: auto; /* 1 */
-  overflow: auto; /* 1 */
-  overscroll-behavior: contain; /* 1 */
+  overflow: auto;  /*1 */
+  overscroll-behavior:initial;  /*1 */
 }
 
 .popup__title{
@@ -92,12 +92,12 @@ POPUP
 }
 
 .popup__close{
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 5rem;
 
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+ 
+  top: 2.0rem;
+  right: 3.5rem;
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -186,7 +186,7 @@ p{
 
 p:nth-child(n+2){
   margin-top: 1rem;
-}*/
+}
 
 .open-popup{
   color: rgb(223, 223, 239);
@@ -206,4 +206,4 @@ p:nth-child(n+2){
   padding-left: .75rem;
   padding-right: .75rem;  
   margin: auto;
-}
+}*/

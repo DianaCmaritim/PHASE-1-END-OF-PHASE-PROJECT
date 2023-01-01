@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+/*  *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 :root{
-    --tenne-tawny: #1908d6;
-    --tenne-tawny-dark: #07acb5;
+    --tenne-tawny: #d65108;
+    --tenne-tawny-dark: #b54507;
 }
 body{
     font-weight: 300;
@@ -16,7 +16,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/*  */
+*/
 .btn{
     font-family: inherit;
     cursor: pointer;
@@ -31,24 +31,24 @@ body{
     margin-bottom: 1rem;
 }
 
-/*  */
-.container{
+/* */
+.container3{
     min-height: 100vh;
-}
-.meal-wrapper{
+} 
+.meal-wrapper3{
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     background: #fff;
     text-align: center;
 }
-.meal-search{
+.meal-search3{
     margin: 2rem 0;
 }
-.meal-search cite{
+.meal-search3 cite{
     font-size: 1rem;
 }
-.meal-search-box{
+.meal-search-box3{
     margin: 1.2rem 0;
     display: flex;
     align-items: stretch;
@@ -88,13 +88,13 @@ body{
 .search-btn:hover{
     background: var(--tenne-tawny-dark);
 }
-.meal-result{
+.meal-result3{
     margin-top: 4rem;
 }
 #meal{
     margin: 2.4rem 0;
 }
-.meal-item{
+.meal-item3{
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -114,7 +114,7 @@ body{
 .meal-name h3{
     font-size: 1.4rem;
 }
-.recipe-btn{
+.recipe-btn3{
     text-decoration: none;
     color: #fff;
     background: var(--tenne-tawny);
@@ -135,12 +135,12 @@ body{
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
 }
-.recipe-btn:hover{
+.recipe-btn3:hover{
     background: var(--tenne-tawny-dark);
 }
 
 /* meal details */
-.meal-details{
+.meal-details3{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -162,10 +162,10 @@ body{
     display: none;
     padding: 2rem 0;
 }
-.meal-details::-webkit-scrollbar{
+.meal-details3::-webkit-scrollbar{
     width: 10px;
 }
-.meal-details::-webkit-scrollbar-thumb{
+.meal-details3::-webkit-scrollbar-thumb{
     background: #f0f0f0;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
@@ -180,13 +180,13 @@ body{
     display: block;
 }
 
-.meal-details-content{
+.meal-details-content3{
     margin: 2rem;
 }
-.meal-details-content p:not(.recipe-category){
+.meal-details-content3 p:not(.recipe-category){
     padding: 1rem 0;
 }
-.recipe-close-btn{
+.recipe-close-btn3{
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -294,10 +294,10 @@ body{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .meal-item{
+    .meal-item3{
         margin: 0;
     }
-    .meal-details{
+    .meal-details3{
         width: 700px;
     }
 }
