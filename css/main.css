@@ -2,7 +2,7 @@
 /*red color #d3325f
 
 .info{
-    background: #e4a300; 
+    background: #e4a300;
 }*/
 body{
    font-family: 'Stylish', sans-serif;
@@ -134,7 +134,7 @@ body{
 
 .navbar-background {
     padding: 5px 20px;
-    
+
 }
 
 .navbar-brand {
@@ -205,7 +205,7 @@ body{
 
 /*####menuitems#*/
 
-.item-conatiner{
+.item-container{
     position: relative;
     /*for the link*/
     overflow: hidden;
@@ -218,7 +218,7 @@ body{
 }
 .item-container:hover .item-img{
     transform: scale(1.2);
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
 .item-link{
@@ -250,9 +250,9 @@ body{
 }
 
 /*######MENU
- 
+
 #menu{
-    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)); 
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7));
 }*/
 
 .special{
