@@ -12,7 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
   margin: -20px 0 50px;
-  background: url(../img/backg.jpg)center/cover fixed no-repeat;
+  background: url(/img/bckg.jpg)center/cover fixed no-repeat;
 }
 
 h1 {

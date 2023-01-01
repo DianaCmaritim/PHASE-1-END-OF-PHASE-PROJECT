@@ -15,12 +15,11 @@ The application will allow users to order food from anywhere and make reservatio
 * Order form/shopping cart
 * Contact form
 * Make reservations form
-* Login/Sign page
+* Login page
 
 ### User Stories
 * The user should be able to place a food order
 * The user should be able to make reservations
-* The user should be able to leave comments or reviews on service delivery.
 * The user should be able to search for a meal,get its recipe and follow on how to prepare the meal by themselves
 
 
