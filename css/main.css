@@ -125,7 +125,7 @@ body{
     }
 }
 
-/* navbar
+navbar
 .navbar {
     background: #c9c1ac;
     padding: 20px 20px;
@@ -195,7 +195,7 @@ body{
 
 .change .bar3 {
     transform: rotate(45deg) translate(-5px, -8px);
-}*/
+}
 
 
 
@@ -268,7 +268,7 @@ body{
     padding: 0 0.4 rem;
 
 }
-/* aboutttttttttttttttt*/
+/* about*/
 .about-picturtes {
     position: relative;
 }
